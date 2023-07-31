@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/coupon"
+    username: "root"
+    password: "1234"
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        globally_quoted_identifiers: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    open-in-view: false
+    hibernate.jdbc.lob.non_contextual_creation: true
